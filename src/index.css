@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main {
+    @apply flex h-full w-full flex-col overflow-y-auto;
+  }
+
+  .base-card {
+    @apply flex flex-col items-start rounded-md bg-white p-4;
+  }
+
+  .col-start {
+    @apply flex flex-col items-start;
+  }
+
+  .ic-container {
+    @apply p-2 hover:bg-gray-100 rounded-full;
+  }
+
+  .stroke-custom {
+    path {
+      stroke-width: 1px !important;
+    }
+  }
+}
